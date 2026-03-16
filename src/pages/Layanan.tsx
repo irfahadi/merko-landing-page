@@ -108,7 +108,7 @@ const Layanan = () => {
       <section className="relative bg-section-dark py-20 overflow-hidden">
         {/* Background glow effect */}
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
-        
+
         <div className="container relative z-10">
           <div className="grid md:grid-cols-5 gap-10 items-center">
             {/* Image - takes 2 cols */}
@@ -130,7 +130,9 @@ const Layanan = () => {
                 NIKMATI{" "}
                 <span className="text-gradient-green italic">LAYANAN</span>
                 <br />
-                <span className="text-gradient-green italic">JARINGAN INTERNET</span>
+                <span className="text-gradient-green italic">
+                  JARINGAN INTERNET
+                </span>
                 <br />
                 TERPADU KAMI
               </h2>
@@ -153,9 +155,13 @@ const Layanan = () => {
                 <p className="text-muted-foreground text-sm">Harga mulai</p>
                 <div className="flex items-baseline gap-1 mt-1">
                   <span className="text-sm text-primary font-bold">Rp.</span>
-                  <span className="text-4xl md:text-5xl font-extrabold text-primary">180</span>
+                  <span className="text-4xl md:text-5xl font-extrabold text-primary">
+                    180
+                  </span>
                   <span className="text-sm text-primary font-bold">.000,-</span>
-                  <span className="text-sm text-muted-foreground ml-2">/ Bulan</span>
+                  <span className="text-sm text-muted-foreground ml-2">
+                    / Bulan
+                  </span>
                 </div>
               </div>
 
@@ -175,18 +181,21 @@ const Layanan = () => {
                 </a>
               </div>
 
-              <p className="text-sm text-muted-foreground border-l-2 border-primary/40 pl-4">
+              {/* <p className="text-sm text-muted-foreground border-l-2 border-primary/40 pl-4">
                 <span className="font-bold text-foreground">Lanjut Baca</span>
                 <br />
                 Untuk Lebih Tau <span className="font-bold text-foreground">Keunggulan Kami</span>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* Daftar Sekarang + Paket Andalan */}
-      <section id="paket-andalan" className="bg-background min-h-screen py-16 scroll-mt-16">
+      <section
+        id="paket-andalan"
+        className="bg-background min-h-screen py-16 scroll-mt-16"
+      >
         <div className="container">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-12">
             <a
@@ -240,20 +249,25 @@ const Layanan = () => {
                   <span className="text-primary font-bold text-xl">
                     Rp {pkg.price}
                   </span>{" "}
-                  <span className="text-xs text-muted-foreground">Per Bulan</span>
+                  <span className="text-xs text-muted-foreground">
+                    Per Bulan
+                  </span>
                 </p>
               </div>
             ))}
           </div>
 
           <p className="text-center text-xs text-muted-foreground mt-8 italic">
-            Baca Syarat dan Ketentuan Pelanggan disini
+            harga dapat sewaktu berubah dalam kebijakan promo atau penambahan
           </p>
         </div>
       </section>
 
       {/* Paket Produktif / Exclusive */}
-      <section id="paket-produktif" className="bg-section-dark min-h-screen py-16 scroll-mt-16">
+      <section
+        id="paket-produktif"
+        className="bg-section-dark min-h-screen py-16 scroll-mt-16"
+      >
         <div className="container">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-12">
             <div>
@@ -301,11 +315,17 @@ const Layanan = () => {
                   <span className="text-primary font-bold text-xl">
                     Rp {pkg.price}
                   </span>{" "}
-                  <span className="text-xs text-muted-foreground">Per Bulan</span>
+                  <span className="text-xs text-muted-foreground">
+                    Per Bulan
+                  </span>
                 </p>
               </div>
             ))}
           </div>
+
+          <p className="text-center text-xs text-muted-foreground mt-8 italic">
+            harga dapat sewaktu berubah dalam kebijakan promo atau penambahan
+          </p>
         </div>
       </section>
 
