@@ -12,6 +12,7 @@ import {
   Clock,
   CheckCircle,
   Banknote,
+  Mail,
 } from "lucide-react";
 import heroTower from "@/assets/hero-tower.jpg";
 import {
