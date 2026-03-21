@@ -1,7 +1,18 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
-import { Phone, Users, Building2, MapPin, ShieldCheck, CreditCard, AlertTriangle, Clock, CheckCircle, Banknote } from "lucide-react";
+import {
+  Phone,
+  Users,
+  Building2,
+  MapPin,
+  ShieldCheck,
+  CreditCard,
+  AlertTriangle,
+  Clock,
+  CheckCircle,
+  Banknote,
+} from "lucide-react";
 import heroTower from "@/assets/hero-tower.jpg";
 import {
   Dialog,
@@ -43,7 +54,8 @@ const kebijakanItems = [
       "Indikator Peforma Layanan",
     ],
     dialogContent: {
-      description: "Service Level Agreement (SLA) adalah komitmen kami dalam menjaga kualitas layanan internet yang Anda gunakan. Berikut detail kebijakan SLA kami:",
+      description:
+        "Service Level Agreement (SLA) adalah komitmen kami dalam menjaga kualitas layanan internet yang Anda gunakan. Berikut detail kebijakan SLA kami:",
       sections: [
         {
           icon: CheckCircle,
@@ -78,7 +90,8 @@ const kebijakanItems = [
       "Cara Konfirmasi Pembayaran",
     ],
     dialogContent: {
-      description: "Berikut informasi lengkap terkait pembayaran tagihan layanan internet kami agar Anda dapat melakukan pembayaran dengan mudah dan tepat waktu:",
+      description:
+        "Berikut informasi lengkap terkait pembayaran tagihan layanan internet kami agar Anda dapat melakukan pembayaran dengan mudah dan tepat waktu:",
       sections: [
         {
           icon: CreditCard,
@@ -105,6 +118,33 @@ const kebijakanItems = [
   },
 ];
 
+const contactInfo = [
+  {
+    icon: Phone,
+    title: "Telepon / WhatsApp",
+    value: "+62 812 3456 7890",
+    desc: "Senin - Sabtu, 08.00 - 21.00 WIB",
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    value: "merkonetworkindonesia@gmail.com",
+    desc: "Respon dalam 1x24 jam",
+  },
+  {
+    icon: MapPin,
+    title: "Alamat Kantor",
+    value: "Sg. Ciung Kali Reja, Kel. Fajar Bulan",
+    desc: "Kec. Way Tenong, Kab. Lampung Barat 34864",
+  },
+  {
+    icon: Clock,
+    title: "Jam Operasional",
+    value: "Senin - Sabtu",
+    desc: "08.00 - 21.00 WIB",
+  },
+];
+
 const RuangInformasi = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -127,8 +167,9 @@ const RuangInformasi = () => {
             <span className="text-gradient-green">RUANG</span> INFORMASI
           </h1>
           <p className="mt-4 text-muted-foreground text-sm md:text-base max-w-lg leading-relaxed">
-            Dipercaya oleh ratusan pelanggan rumah dan mitra di berbagai wilayah,
-            hadir pengalaman online yang aman, cepat, dan tanpa hambatan.
+            Dipercaya oleh ratusan pelanggan rumah dan mitra di berbagai
+            wilayah, hadir pengalaman online yang aman, cepat, dan tanpa
+            hambatan.
           </p>
         </div>
       </section>
@@ -146,9 +187,15 @@ const RuangInformasi = () => {
                   <stat.icon size={22} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-2xl font-extrabold text-foreground">{stat.value}</p>
-                  <p className="text-sm font-bold text-foreground mt-0.5">{stat.label}</p>
-                  <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{stat.desc}</p>
+                  <p className="text-2xl font-extrabold text-foreground">
+                    {stat.value}
+                  </p>
+                  <p className="text-sm font-bold text-foreground mt-0.5">
+                    {stat.label}
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                    {stat.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -216,7 +263,11 @@ const RuangInformasi = () => {
 
       {/* Popup Dialogs */}
       {kebijakanItems.map((item, index) => (
-        <Dialog key={index} open={openIndex === index} onOpenChange={(open) => !open && setOpenIndex(null)}>
+        <Dialog
+          key={index}
+          open={openIndex === index}
+          onOpenChange={(open) => !open && setOpenIndex(null)}
+        >
           <DialogContent className="bg-card border-border max-w-lg max-h-[85vh] overflow-y-auto">
             <DialogHeader>
               <div className="flex items-center gap-3 mb-1">
@@ -240,7 +291,9 @@ const RuangInformasi = () => {
                 >
                   <div className="flex items-center gap-2.5 mb-2">
                     <section.icon size={16} className="text-primary shrink-0" />
-                    <h4 className="text-sm font-bold text-foreground">{section.title}</h4>
+                    <h4 className="text-sm font-bold text-foreground">
+                      {section.title}
+                    </h4>
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed pl-[26px]">
                     {section.desc}
@@ -264,7 +317,7 @@ const RuangInformasi = () => {
 
       {/* CTA Section */}
       <section className="relative py-20 overflow-hidden">
-        <div
+        {/* <div
           className="absolute inset-0"
           style={{
             backgroundImage: `linear-gradient(135deg, hsl(145 70% 45% / 0.08) 0%, hsl(160 20% 4% / 0.95) 60%), url(${heroTower})`,
@@ -281,7 +334,8 @@ const RuangInformasi = () => {
               ADA PERTANYAAN LEBIH LANJUT ?
             </h2>
             <p className="mt-3 text-muted-foreground text-sm leading-relaxed max-w-md">
-              Hubungi Customer Support kami yang Siap Melayani Anda 24/7 untuk Membantu Anda
+              Hubungi Customer Support kami yang Siap Melayani Anda 24/7 untuk
+              Membantu Anda
             </p>
             <a
               href="https://wa.me/"
@@ -292,6 +346,29 @@ const RuangInformasi = () => {
               <Phone size={18} />
               HUBUNGI KAMI
             </a>
+          </div>
+        </div> */}
+        <div className="container">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {contactInfo.map((item) => (
+              <div
+                key={item.title}
+                className="group bg-card border border-border rounded-xl p-5 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_hsl(145_70%_45%/0.08)]"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <item.icon size={20} className="text-primary" />
+                </div>
+                <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">
+                  {item.title}
+                </p>
+                <p className="text-sm font-bold text-foreground mt-1">
+                  {item.value}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

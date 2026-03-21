@@ -79,12 +79,16 @@ const HubungiKami = () => {
     subject: "",
     message: "",
   });
-  const [errors, setErrors] = useState<Partial<Record<keyof ContactForm, string>>>({});
+  const [errors, setErrors] = useState<
+    Partial<Record<keyof ContactForm, string>>
+  >({});
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -112,13 +116,15 @@ const HubungiKami = () => {
     setTimeout(() => {
       setSending(false);
       setSubmitted(true);
-      toast.success("Pesan berhasil dikirim! Kami akan segera menghubungi Anda.");
+      toast.success(
+        "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.",
+      );
     }, 1500);
   };
 
   const openWhatsApp = () => {
     const message = encodeURIComponent(
-      "Halo PT. Merko, saya ingin bertanya tentang layanan internet Anda."
+      "Halo PT. Merko, saya ingin bertanya tentang layanan internet Anda.",
     );
     window.open(`https://wa.me/6281234567890?text=${message}`, "_blank");
   };
@@ -136,12 +142,13 @@ const HubungiKami = () => {
               Hubungi Kami
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
-              KAMI SIAP{" "}
-              <span className="text-gradient-green">MEMBANTU</span> ANDA
+              KAMI SIAP <span className="text-gradient-green">MEMBANTU</span>{" "}
+              ANDA
             </h1>
             <p className="mt-4 text-muted-foreground text-sm md:text-base leading-relaxed max-w-lg">
-              Punya pertanyaan atau butuh bantuan? Tim kami siap melayani Anda 24/7.
-              Hubungi kami melalui form, WhatsApp, atau kunjungi kantor kami.
+              Punya pertanyaan atau butuh bantuan? Tim kami siap melayani Anda
+              24/7. Hubungi kami melalui form, WhatsApp, atau kunjungi kantor
+              kami.
             </p>
           </div>
         </div>
@@ -162,8 +169,12 @@ const HubungiKami = () => {
                 <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">
                   {item.title}
                 </p>
-                <p className="text-sm font-bold text-foreground mt-1">{item.value}</p>
-                <p className="text-xs text-muted-foreground mt-1">{item.desc}</p>
+                <p className="text-sm font-bold text-foreground mt-1">
+                  {item.value}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -198,7 +209,13 @@ const HubungiKami = () => {
                   <button
                     onClick={() => {
                       setSubmitted(false);
-                      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+                      setForm({
+                        name: "",
+                        email: "",
+                        phone: "",
+                        subject: "",
+                        message: "",
+                      });
                     }}
                     className="mt-6 text-primary text-sm font-semibold hover:underline"
                   >
@@ -222,7 +239,9 @@ const HubungiKami = () => {
                         placeholder="Masukkan nama"
                       />
                       {errors.name && (
-                        <p className="text-xs text-destructive mt-1">{errors.name}</p>
+                        <p className="text-xs text-destructive mt-1">
+                          {errors.name}
+                        </p>
                       )}
                     </div>
                     <div>
@@ -240,7 +259,9 @@ const HubungiKami = () => {
                         placeholder="email@contoh.com"
                       />
                       {errors.email && (
-                        <p className="text-xs text-destructive mt-1">{errors.email}</p>
+                        <p className="text-xs text-destructive mt-1">
+                          {errors.email}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -260,7 +281,9 @@ const HubungiKami = () => {
                         placeholder="0812 3456 7890"
                       />
                       {errors.phone && (
-                        <p className="text-xs text-destructive mt-1">{errors.phone}</p>
+                        <p className="text-xs text-destructive mt-1">
+                          {errors.phone}
+                        </p>
                       )}
                     </div>
                     <div>
@@ -272,18 +295,26 @@ const HubungiKami = () => {
                         value={form.subject}
                         onChange={handleChange}
                         className={`mt-1 w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors ${
-                          errors.subject ? "border-destructive" : "border-border"
+                          errors.subject
+                            ? "border-destructive"
+                            : "border-border"
                         } ${!form.subject ? "text-muted-foreground/50" : ""}`}
                       >
                         <option value="">Pilih subjek</option>
-                        <option value="Berlangganan Baru">Berlangganan Baru</option>
-                        <option value="Gangguan Layanan">Gangguan Layanan</option>
+                        <option value="Berlangganan Baru">
+                          Berlangganan Baru
+                        </option>
+                        <option value="Gangguan Layanan">
+                          Gangguan Layanan
+                        </option>
                         <option value="Upgrade Paket">Upgrade Paket</option>
                         <option value="Pembayaran">Pembayaran</option>
                         <option value="Lainnya">Lainnya</option>
                       </select>
                       {errors.subject && (
-                        <p className="text-xs text-destructive mt-1">{errors.subject}</p>
+                        <p className="text-xs text-destructive mt-1">
+                          {errors.subject}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -304,7 +335,9 @@ const HubungiKami = () => {
                     />
                     <div className="flex justify-between">
                       {errors.message && (
-                        <p className="text-xs text-destructive mt-1">{errors.message}</p>
+                        <p className="text-xs text-destructive mt-1">
+                          {errors.message}
+                        </p>
                       )}
                       <p className="text-xs text-muted-foreground mt-1 ml-auto">
                         {form.message.length}/1000

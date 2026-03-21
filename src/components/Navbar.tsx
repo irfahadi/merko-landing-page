@@ -7,7 +7,7 @@ const navLinks = [
   { label: "BERANDA", href: "/" },
   { label: "LAYANAN", href: "/layanan" },
   { label: "RUANG INFORMASI", href: "/ruang-informasi" },
-  { label: "HUBUNGI KAMI", href: "/hubungi-kami" },
+  { label: "HUBUNGI KAMI", href: "api.whatsapp.com" },
 ];
 
 const Navbar = () => {
@@ -36,7 +36,10 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
+        <button
+          className="md:hidden text-foreground"
+          onClick={() => setOpen(!open)}
+        >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
