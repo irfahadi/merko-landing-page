@@ -318,6 +318,29 @@ const RuangInformasi = () => {
 
       {/* CTA Section */}
       <section className="relative py-20 overflow-hidden">
+        <section className="bg-section-dark py-20">
+        <div className="container">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-12">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+                KAMI SIAP MEMBANTU ANDA
+              </h2>
+              <p className="mt-2 text-muted-foreground text-sm max-w-md leading-relaxed">
+                 Punya pertanyaan atau butuh bantuan? Tim kami siap melayani Anda
+              24/7. Hubungi kami melalui form, WhatsApp, atau kunjungi kantor
+              kami.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 border border-foreground text-foreground font-bold px-6 py-3 rounded-lg text-sm hover:bg-foreground hover:text-background transition-all duration-300"
+            >
+              <Phone size={18} />
+              HUBUNGI KAMI
+            </a>
+          </div>
         {/* <div
           className="absolute inset-0"
           style={{
