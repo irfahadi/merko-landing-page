@@ -102,18 +102,18 @@ const kebijakanItems = [
         {
           icon: Clock,
           title: "Jadwal & Tenggat Pembayaran",
-          desc: "Tagihan diterbitkan setiap tanggal 1 bulan berjalan. Batas pembayaran maksimal tanggal 15 setiap bulannya. Lewat tanggal tersebut dianggap telat bayar.",
+          desc: "Tagihan diterbitkan setiap tanggal 1 bulan berjalan. Batas pembayaran maksimal tanggal 15/30 setiap bulannya. Lewat tanggal tersebut dianggap telat bayar.",
         },
         {
           icon: AlertTriangle,
-          title: "Kebijakan Denda Keterlambatan",
-          desc: "Keterlambatan lebih dari 7 hari dikenakan denda Rp 10.000. Jika melebihi 30 hari, layanan akan di-suspend hingga pembayaran diselesaikan.",
+          title: "Kebijakan Keterlambatan Pembayaran",
+          desc: "Jika melebihi 30 hari, layanan akan di-suspend hingga pembayaran diselesaikan.",
         },
-        {
-          icon: CheckCircle,
-          title: "Cara Konfirmasi Pembayaran",
-          desc: "Kirim bukti transfer via WhatsApp ke nomor CS kami beserta nama pelanggan dan ID pelanggan. Konfirmasi akan diproses dalam 1×24 jam kerja.",
-        },
+        // {
+        //   icon: CheckCircle,
+        //   title: "Cara Konfirmasi Pembayaran",
+        //   desc: "Kirim bukti transfer via WhatsApp ke nomor CS kami beserta nama pelanggan dan ID pelanggan. Konfirmasi akan diproses dalam 1×24 jam kerja.",
+        // },
       ],
     },
   },
