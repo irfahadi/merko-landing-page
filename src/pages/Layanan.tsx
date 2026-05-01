@@ -199,7 +199,7 @@ const Layanan = () => {
         <div className="container">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-12">
             <a
-              href="https://wa.me/"
+              href="https://api.whatsapp.com/send/?phone=%2B6282211771426"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-foreground text-foreground font-bold px-8 py-3 text-sm tracking-wider hover:bg-foreground hover:text-background transition-colors"
@@ -279,7 +279,7 @@ const Layanan = () => {
               </p>
             </div>
             <a
-              href="https://wa.me/"
+              href="https://api.whatsapp.com/send/?phone=%2B6282211771426"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-foreground text-foreground font-bold px-8 py-3 text-sm tracking-wider hover:bg-foreground hover:text-background transition-colors"
