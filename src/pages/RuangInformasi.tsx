@@ -217,7 +217,7 @@ const RuangInformasi = () => {
               </p>
             </div>
             <a
-              href="https://wa.me/"
+              href="https://api.whatsapp.com/send/?phone=%2B6282211771426"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 border border-foreground text-foreground font-bold px-6 py-3 rounded-lg text-sm hover:bg-foreground hover:text-background transition-all duration-300"
@@ -331,7 +331,7 @@ const RuangInformasi = () => {
               </p>
             </div>
             <a
-              href="https://wa.me/"
+              href="https://api.whatsapp.com/send/?phone=%2B6282211771426"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 border border-foreground text-foreground font-bold px-6 py-3 rounded-lg text-sm hover:bg-foreground hover:text-background transition-all duration-300"

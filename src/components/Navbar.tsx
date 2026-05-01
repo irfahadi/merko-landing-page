@@ -7,7 +7,10 @@ const navLinks = [
   { label: "BERANDA", href: "/" },
   { label: "LAYANAN", href: "/layanan" },
   { label: "RUANG INFORMASI", href: "/ruang-informasi" },
-  { label: "HUBUNGI KAMI", href: "https://wa.me/" },
+  {
+    label: "HUBUNGI KAMI",
+    href: "https://api.whatsapp.com/send/?phone=%2B6282211771426",
+  },
 ];
 
 const Navbar = () => {
