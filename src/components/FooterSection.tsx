@@ -19,7 +19,7 @@ const FooterSection = () => {
               </p>
               <p>Kab. Lampung Barat, Provinsi Lampung, Kode Pos: 34884</p>
               <p className="text-primary font-semibold mt-3">Alamat E-mail :</p>
-              <p>merkonetworkindonesia@gmail.com</p>
+              <p>admin@merko.id</p>
             </div>
           </div>
 
