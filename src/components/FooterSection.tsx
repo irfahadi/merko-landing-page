@@ -13,8 +13,11 @@ const FooterSection = () => {
             <img src={merkoLogo} alt="PT. Merko" className="h-14 w-auto" />
             <div className="text-sm text-muted-foreground space-y-1">
               <p className="text-primary font-semibold">Alamat Kantor :</p>
-              <p>Sg. Ciung Kali Reja, Kel. Fajar Bulan,</p>
-              <p>Kec. Way Tenong Kab. Lampung Barat 34864</p>
+              <p>
+                Gang Ciung Kali Reja, Desa/Kelurahan Pajar Bulan, Kec. Way
+                Tenong,
+              </p>
+              <p>Kab. Lampung Barat, Provinsi Lampung, Kode Pos: 34884</p>
               <p className="text-primary font-semibold mt-3">Alamat E-mail :</p>
               <p>merkonetworkindonesia@gmail.com</p>
             </div>
@@ -45,13 +48,15 @@ const FooterSection = () => {
               >
                 Info Lain
               </a>
-              <p className="text-muted-foreground text-xs mt-2">Pelajari Lebih Lanjut Disini</p>
+              <p className="text-muted-foreground text-xs mt-2">
+                Pelajari Lebih Lanjut Disini
+              </p>
             </div>
           </div>
 
           {/* Right: Mitra Kerja */}
           <div className="flex flex-col items-center text-center gap-4">
-            <div>
+            {/* <div>
               <p className="text-muted-foreground text-sm">Bersama</p>
               <h3 className="text-xl md:text-2xl font-bold text-foreground leading-tight">
                 Mitra Kerja<br />Jaringan Terpadu
@@ -61,7 +66,7 @@ const FooterSection = () => {
             <img src={gctLogo} alt="Global Citra Teknologi" className="h-16 md:h-20 w-auto" />
             <p className="text-muted-foreground text-xs leading-relaxed max-w-xs">
               PT Global Citra Teknologi berdiri pada 27 Maret 2021 (akta PT) dan resmi laik operasi sejak 21 September 2022 sebagai Internet Service Provider.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
