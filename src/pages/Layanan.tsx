@@ -93,7 +93,7 @@ const Layanan = () => {
             Kami menyediakan Berbagai Solusi Untuk Kebutuhan Internet Anda
           </p>
           <a
-            href="https://api.whatsapp.com/send/?phone=%2B6282211771426"
+            href="https://api.whatsapp.com/send/?phone=%2B6285126428642"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-3 bg-primary text-primary-foreground font-bold px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
@@ -199,7 +199,7 @@ const Layanan = () => {
         <div className="container">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-12">
             <a
-              href="https://api.whatsapp.com/send/?phone=%2B6282211771426"
+              href="https://api.whatsapp.com/send/?phone=%2B6285126428642"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-foreground text-foreground font-bold px-8 py-3 text-sm tracking-wider hover:bg-foreground hover:text-background transition-colors"
@@ -279,7 +279,7 @@ const Layanan = () => {
               </p>
             </div>
             <a
-              href="https://api.whatsapp.com/send/?phone=%2B6282211771426"
+              href="https://api.whatsapp.com/send/?phone=%2B6285126428642"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-foreground text-foreground font-bold px-8 py-3 text-sm tracking-wider hover:bg-foreground hover:text-background transition-colors"

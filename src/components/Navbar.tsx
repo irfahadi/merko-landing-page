@@ -9,7 +9,7 @@ const navLinks = [
   { label: "RUANG INFORMASI", href: "/ruang-informasi" },
   {
     label: "HUBUNGI KAMI",
-    href: "https://api.whatsapp.com/send/?phone=%2B6282211771426",
+    href: "https://api.whatsapp.com/send/?phone=%2B6285126428642",
   },
 ];
 

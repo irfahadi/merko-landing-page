@@ -278,7 +278,7 @@ const HubungiKami = () => {
                         className={`mt-1 w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-colors ${
                           errors.phone ? "border-destructive" : "border-border"
                         }`}
-                        placeholder="0812 3456 7890"
+                        placeholder="0851 2642 8642"
                       />
                       {errors.phone && (
                         <p className="text-xs text-destructive mt-1">
