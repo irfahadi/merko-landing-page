@@ -123,7 +123,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telepon / WhatsApp",
-    value: "+62 812 3456 7890",
+    value: "0851 2642 8642",
     desc: "Senin - Sabtu, 08.00 - 21.00 WIB",
   },
   {
